@@ -59,7 +59,9 @@ body{
         height: 100%;
         object-fit: cover;
       }
-    
+    p{
+        font-family: ;
+    }
     .header{
         color: white;
         height: 300px;
@@ -127,14 +129,14 @@ body{
         }
     }
     .photo-mesto{
-        background-color: white;
+
         width: 50%;
         height: 100%;
     }
     .big-text{
         width: 50%;
         height: 100%;
-        background-color: rgb(80, 80, 192);
+        
     }
     #окна-направлений{
         width: 100%;
@@ -146,9 +148,12 @@ body{
     }
     #мероприятия{
         width: 100%;
-        transform: skewX(-15deg);
+        background: linear-gradient(70deg, transparent 50%, rgba(94, 21, 163, 0.742) 55%), url(/images/мероприятия.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
         .big-text{
-            background-color: rgb(95, 21, 163);
+            
         }    
     }
     #отзывы{

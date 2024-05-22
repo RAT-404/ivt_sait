@@ -1,0 +1,8 @@
+FROM python:3.11-slim-bookworm
+
+WORKDIR /usr/src/code
+
+COPY ./requirements/base.txt /usr/src/code/app/requirements/base.txt
+RUN apt-get update && pip install --upgrade pip && pip install --no-cache-dir --upgrade -r /usr/src/code/app/requirements/base.txt
+COPY . /usr/src/code/app
+

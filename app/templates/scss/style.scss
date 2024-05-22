@@ -1,0 +1,14 @@
+@import "_null.scss";
+@import "_glavstr.scss";
+body {
+	color: #000;
+	font-size: 14px;
+	&._lock {
+		overflow: hidden;
+	}
+}
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+}

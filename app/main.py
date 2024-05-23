@@ -10,6 +10,7 @@ app.mount("/images", StaticFiles(directory="templates/images"), name="images")
 app.mount('/css', StaticFiles(directory="templates/css"), name='css')
 app.mount('/vec_img', StaticFiles(directory="templates/vec_img"), name='vec_img')
 app.mount('/scss', StaticFiles(directory="templates/scss"), name='scss')
+app.mount('/fonts', StaticFiles(directory="templates/fonts"), name='fonts')
 
 
 templates = Jinja2Templates(directory="templates")

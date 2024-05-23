@@ -59,9 +59,7 @@ body{
         height: 100%;
         object-fit: cover;
       }
-    p{
-        font-family: ;
-    }
+
     .header{
         color: white;
         height: 300px;
@@ -152,9 +150,7 @@ body{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: left;
-        .big-text{
-            
-        }    
+    
     }
     #отзывы{
         display: flex;
@@ -187,5 +183,9 @@ body{
         background-size: cover;
         background-position: center center;
     }
+    @font-face {
+        font-family: 3270;
+        src: url("/fonts/3270.ttf");
+      }
 
 }

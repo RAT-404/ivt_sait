@@ -1,0 +1,269 @@
+@charset "UTF-8";
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+body {
+  background-color: rgb(30, 30, 30);
+}
+
+.container {
+  max-width: 1030px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  background-color: rgb(30, 30, 30);
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  height: 600px;
+}
+
+.block {
+  display: flex;
+  justify-content: space-between;
+  height: 600px;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  margin-top: 80px;
+}
+
+.text-block {
+  background-color: rgb(95, 21, 163);
+  width: 45%;
+  height: 400px;
+  border-radius: 10%;
+}
+
+.photo-prepod {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 950px) {
+  .container {
+    margin-top: 10px;
+    color: white;
+  }
+  .text-block {
+    background-color: blurgb(95, 21, 163);
+    width: 80%;
+    height: 250px;
+    border-radius: 10%;
+    margin: 15px auto;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .header {
+    color: white;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    background: url("/vec_img/сетка.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .header .text-block {
+    background-color: rgb(95, 21, 163);
+    width: 60%;
+    height: 250px;
+    border-radius: 10%;
+    margin: 40px auto;
+  }
+  .logo {
+    width: 100px;
+    height: 65px;
+    margin: 40px auto;
+  }
+  .block {
+    height: 300px;
+    width: 300px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: flex-start;
+  }
+  #преподы {
+    flex-direction: column;
+    height: 700px;
+  }
+  #преподы .photos {
+    display: flex;
+    background-color: rgb(30, 30, 30);
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+  }
+  #преподы .photos .hphotos {
+    width: 50%;
+  }
+  #преподы .photos .hphotos .photo-prepod {
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    border-radius: 50%;
+    border-color: rgb(95, 21, 163);
+    border-style: solid;
+    border-width: 5px;
+  }
+  #преподы .photos .hphotos .photo-prepod img {
+    border-radius: 50%;
+  }
+  #преподы .photos .hphotos #под-текст {
+    margin: 25px auto;
+    height: 50px;
+  }
+  #преподы .photos #правые-фото {
+    margin-top: 25px;
+  }
+  .photo-mesto {
+    width: 50%;
+    height: 100%;
+  }
+  .big-text {
+    width: 50%;
+    height: 100%;
+  }
+  #окна-направлений {
+    width: 100%;
+    border-color: rgb(95, 21, 163);
+    border-style: solid;
+    border-width: 3px;
+    display: flex;
+  }
+  #мероприятия {
+    width: 100%;
+    background: linear-gradient(70deg, transparent 50%, rgba(94, 21, 163, 0.742) 55%), url(/images/мероприятия.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+  }
+  #отзывы {
+    display: flex;
+    height: 370px;
+  }
+  #отзывы .otzivi {
+    width: 50%;
+    height: 300px;
+  }
+  #отзывы .otzivi .text-block {
+    width: 90%;
+    height: 125px;
+  }
+  #правые {
+    margin-top: 70px;
+  }
+  #левые {
+    margin-bottom: 25px;
+  }
+  .footer {
+    color: white;
+    height: 300px;
+    width: 100%;
+    margin: 30px 0px auto;
+    display: flex;
+    justify-content: flex-start;
+    background: url("/images/общее.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  @font-face {
+    font-family: 3270;
+    src: url("/fonts/3270.ttf");
+  }
+}
+body {
+  color: #000;
+  font-size: 14px;
+}
+body._lock {
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}/*# sourceMappingURL=style.css.map */

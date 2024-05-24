@@ -130,7 +130,7 @@ body {
     color: white;
   }
   .text-block {
-    background-color: blurgb(95, 21, 163);
+    background-color: rgb(95, 21, 163);
     width: 80%;
     height: 250px;
     border-radius: 10%;
@@ -141,9 +141,6 @@ body {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-  }
-  p {
-    font-family: Hack;
   }
   .header {
     color: white;
@@ -207,7 +204,7 @@ body {
   #преподы .photos .hphotos .photo-prepod {
     width: 100%;
     height: 150px;
-    background-color: black;
+    background-color: rgb(30, 30, 30);
     border-radius: 50%;
     border-color: rgb(95, 21, 163);
     border-style: solid;
@@ -217,11 +214,15 @@ body {
     border-radius: 50%;
   }
   #преподы .photos .hphotos #под-текст {
-    margin: 25px auto;
+    margin: 15px auto 35px auto;
     height: 50px;
+    text-align: center;
   }
   #преподы .photos #правые-фото {
     margin-top: 25px;
+  }
+  #преподы .text-block {
+    height: 400px;
   }
   .photo-mesto {
     width: 50%;
@@ -232,26 +233,42 @@ body {
     height: 100%;
   }
   #окна-направлений {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
-    border-color: rgb(95, 21, 163);
-    border-style: solid;
-    border-width: 3px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    height: 680px;
+  }
+  #окна-направлений .text-block {
+    width: 80%;
+    height: 50%;
+  }
+  #окна-направлений .text-block p {
+    margin-left: 15px;
+    font-size: 13px;
+  }
+  #окна-направлений .photo-mesto {
+    width: 100%;
+    height: 50%;
   }
   #мероприятия {
     width: 100%;
-    background: linear-gradient(70deg, transparent 50%, rgba(94, 21, 163, 0.742) 55%), url(/images/мероприятия.png);
+    background: linear-gradient(70deg, transparent 47%, rgb(94, 21, 163) 0%), url(/images/спорт.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
+  }
+  #мероприятия p {
+    font-size: 13px;
+    text-align: right;
+    margin: 10px 3px;
   }
   #отзывы {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 370px;
+    height: 600px;
   }
   #отзывы .otzivi {
     width: 50%;
@@ -282,6 +299,57 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer #текст-подвала {
+    margin-top: 15px;
+    width: 240px;
+    height: 72px;
+    background-color: rgb(30, 30, 30);
+    border-radius: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer #текст-подвала .icon {
+    margin: 6px 10px;
+    width: 60px;
+    height: 60px;
+  }
+  p {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 15px;
+    margin: 10px 10px;
+  }
+  h1 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    margin: 10px 10px;
+  }
+}
+@media (max-width: 345px) {
+  p {
+    font-size: 12px;
+  }
+  .header .text-block {
+    height: 220px;
+  }
+  #преподы .text-block p {
+    font-size: 14px;
+  }
+  #мероприятия {
+    background: linear-gradient(70deg, transparent 50.5%, rgb(94, 21, 163) 0%), url(/images/спорт.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+  }
+  #мероприятия p {
+    font-size: 11px;
   }
 }
 body {

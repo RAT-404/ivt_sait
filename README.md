@@ -1,10 +1,3 @@
- ```sh
-    docker-compose build
-    docker-compose up
- ```
-
-
-
 ## Usage
 
 1. Clone the repo

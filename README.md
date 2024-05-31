@@ -14,6 +14,7 @@
     ```sh
     docker-compose up --build
     ```
+4. Go to http://localhost:{BACKEND_PORT}/
 
 ## License
 

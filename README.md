@@ -16,6 +16,3 @@
     ```
 4. Go to http://localhost:{your_backend_port}/
 
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
